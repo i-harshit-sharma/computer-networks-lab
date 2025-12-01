@@ -1,0 +1,15 @@
+conf t
+ipv6 unicast-routing
+
+interface gigabitEthernet 0/0
+ ipv6 address 2001:db8:1::1/64
+ no shutdown
+exit
+
+interface gigabitEthernet 0/1
+ ipv6 address 2001:db8:2::1/64
+ no shutdown
+exit
+ PC -
+2001:db8:1::10 64 
+2001:db8:1::1
